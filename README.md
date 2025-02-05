@@ -21,12 +21,14 @@
 
 Automator を使用してドロップレットにします。
 
-`cargo build --release` でビルドします。（結果の実行ファイルが `/target/release` 内に出力されま）
+`cargo build --release` でビルドします。（結果の実行ファイルが `/target/release` 内に出力されます）
 
 Automator を起動し、「アプリケーション」を選択して作成します。
+
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/81978fe1-af69-4664-a96b-973166c6a758" />
 
 「シェルスクリプトを実行」を右側にドロップし、「入力の引き渡し方法」で「引数として」を選択し、`<ビルドした実行ファイルへのパス> "$@"` を設定します。
+
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/38e5dd99-5468-4967-aea4-e64ffc7a2389" />
 
-保存したファイルがドロップレットになります。
+保存したファイルがドロップレットになり、対象ファイルをドロップすることで、対象ファイルの名前が変更されます。
